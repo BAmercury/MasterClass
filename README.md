@@ -43,6 +43,7 @@ Optimal Control/Optimization Methods:
 Flight Mechanics:
 [Youtube Playlist](https://www.youtube.com/playlist?list=PLWC_AgPbmiSQCnuHnS9eh2rSfCZPg31rk)
 
+Introduction to Aeronautical Engineering:
 [EdX Course](https://www.edx.org/course/introduction-to-aeronautical-engineering-2)
 
 # Electronics
