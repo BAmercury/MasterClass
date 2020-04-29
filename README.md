@@ -1,5 +1,5 @@
 # MasterClass
-List of resources that I use all the time. Robotics, Control, Dynamics, EE
+List of resources that I use all the time throughout my jobs and school. Robotics, Controls, Dynamics, EE, CS
 
 # General Programming:
 
