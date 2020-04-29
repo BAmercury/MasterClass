@@ -11,7 +11,10 @@ List of resources that I use all the time. Robotics, Control, Dynamics, EE
 
 [tutorial](https://github.com/templerobotics/main/wiki/Networking-Tutorials)
 
-# Control Systems
+# Control Systems and Aerospace
+
+My youtube playlist:
+[Youtube Playlist](https://www.youtube.com/playlist?list=PLWC_AgPbmiSTcPTEHKK6BMRWUQZDhQ2Ej)
 
 This is a great pdf that goes over the entire span of modeling, simulation, and control (From classical to modern) systems:
 [Control System Master Guide](https://file.tavsys.net/control/state-space-guide.pdf)
@@ -33,6 +36,12 @@ Here are two videos that take you through control of a line following robot:
 
 And MATLAB tech talks (By Brian Douglas again):
 [More Brian Douglas](https://www.mathworks.com/videos/control-systems-in-practice-part-1-what-control-systems-engineers-do-1534488209151.html)
+
+Optimal Control/Optimization Methods:
+[Youtube Playlist](https://www.youtube.com/playlist?list=PLMLojHoA_QPmRiPotD_TnfdUkglTexuqm)
+
+Flight Mechanics:
+[Youtube Playlist](https://www.youtube.com/playlist?list=PLWC_AgPbmiSQCnuHnS9eh2rSfCZPg31rk)
 
 # Electronics
 
