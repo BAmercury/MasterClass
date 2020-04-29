@@ -11,7 +11,7 @@ List of resources that I use all the time. Robotics, Control, Dynamics, EE
 
 [tutorial](https://github.com/templerobotics/main/wiki/Networking-Tutorials)
 
-# Control Systems and Aerospace
+# Control Systems, Aerospace, Flight Mechanics
 
 My youtube playlist:
 [Youtube Playlist](https://www.youtube.com/playlist?list=PLWC_AgPbmiSTcPTEHKK6BMRWUQZDhQ2Ej)
@@ -42,6 +42,8 @@ Optimal Control/Optimization Methods:
 
 Flight Mechanics:
 [Youtube Playlist](https://www.youtube.com/playlist?list=PLWC_AgPbmiSQCnuHnS9eh2rSfCZPg31rk)
+
+[EdX Course](https://www.edx.org/course/introduction-to-aeronautical-engineering-2)
 
 # Electronics
 
