@@ -46,6 +46,9 @@ Flight Mechanics:
 Introduction to Aeronautical Engineering:
 [EdX Course](https://www.edx.org/course/introduction-to-aeronautical-engineering-2)
 
+Upenn Quadrotor Course
+[Upenn Course](https://www.youtube.com/playlist?list=PLblGgzWkqSqM7IWsgjDetdzZDS1NbkTnd)
+
 # Electronics
 
 [Simulating Arduino Circuits at Home](https://github.com/templerobotics/main/wiki/TinkerCAD-Virtual-Circuits-(Arduino-Simulator))
