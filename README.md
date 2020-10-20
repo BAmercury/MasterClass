@@ -1,15 +1,24 @@
 # MasterClass
 List of resources that I use all the time throughout my jobs and school. Robotics, Controls, Dynamics, EE, CS
 
-# General Programming:
+# Embedded Systems and Programming:
 
 [Introduction to Computer Science](https://www.edx.org/course/cs50s-introduction-to-computer-science)
 
 [Solving problems using code](https://www.codingame.com)
 
-# Telecomm
+[Practice and develop your coding skills](https://leetcode.com)
+
+[Great curated list of embedded resources from nhivp](https://github.com/nhivp/Awesome-Embedded)
+
+
+# Networking and Telecommunications
 
 [tutorial](https://github.com/templerobotics/main/wiki/Networking-Tutorials)
+
+# Physics
+
+[Feynman's Lectures on Physics](https://www.feynmanlectures.caltech.edu)
 
 # Control Systems, Aerospace, Flight Mechanics
 
@@ -22,6 +31,9 @@ This is a great pdf that goes over the entire span of modeling, simulation, and 
 Brian Douglas posts some great Khan Academy-like tutorials on control theory and design techniques
 [Brian Douglas Control Tutorials](https://www.youtube.com/channel/UCq0imsn84ShAe9PBOFnoIrg)
 
+And MATLAB tech talks (By Brian Douglas again):
+[More Brian Douglas](https://www.mathworks.com/videos/control-systems-in-practice-part-1-what-control-systems-engineers-do-1534488209151.html)
+
 If you have a better handle on Linear Algebra and Differential Equations you can check out this playlist for modern control fundamentals:
 [Control BootCamp](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR20Mz-VpzgfQs5zrYi085m)
 
@@ -33,9 +45,6 @@ This website also has hardware examples on Arduino:
 
 Here are two videos that take you through control of a line following robot:
 [Line Following](https://www.youtube.com/watch?v=Fjdmg8TjV74)
-
-And MATLAB tech talks (By Brian Douglas again):
-[More Brian Douglas](https://www.mathworks.com/videos/control-systems-in-practice-part-1-what-control-systems-engineers-do-1534488209151.html)
 
 Optimal Control/Optimization Methods:
 [Youtube Playlist](https://www.youtube.com/playlist?list=PLMLojHoA_QPmRiPotD_TnfdUkglTexuqm)
@@ -74,6 +83,8 @@ Upenn Quadrotor Course
 [Servo Control with Raspberry Pi](http://www.instructables.com/id/Servo-Motor-Control-With-Raspberry-Pi/)
 
 # Kinematics, Dynamics, Localization, and other Robotics topics
+
+[Mac Toussaint's Robotics course](https://github.com/MarcToussaint/robotics-course)
 
 [Robot Localization](https://www.youtube.com/watch?v=31xZhj2uPr4)
 
@@ -114,6 +125,9 @@ Check out the video version: [ROS Video Playlist](https://www.youtube.com/playli
 
 The Construct is a great Youtube channel that has a ton of material on ROS and its features: [The Construct Playlist](https://www.youtube.com/watch?v=DBFYZRMLr70&list=PLK0b4e05LnzZWg_7QrIQWyvSPX2WN2ncc)
 
+And MooresRobots is a good place to sort of combine everything you know about robotics (Control systems, ROS, hardware):
+[MooresRobots](http://moorerobots.com/blog)
+
 Go here [LINK](http://wiki.ros.org/ROS/Tutorials) or follow through the list:
 
 1. Configuring your ROS environment: [ROS Tutorial 1](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)
@@ -131,8 +145,5 @@ Go here [LINK](http://wiki.ros.org/ROS/Tutorials) or follow through the list:
 7. Writing a Publisher/Subscriber in Python: [ROS Tutorial 7](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
 
 8. Examining Publisher/Subscriber in Python: [ROS Tutorial 8](http://wiki.ros.org/ROS/Tutorials/ExaminingPublisherSubscriber)
-
-And MooresRobots is a good place to sort of combine everything you know about robotics (Control systems, ROS, hardware):
-[MooresRobots](http://moorerobots.com/blog)
 
 
