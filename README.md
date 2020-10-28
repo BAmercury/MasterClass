@@ -118,8 +118,13 @@ Remember to source your setup.bash files (You will need to source these files an
     source devel/setup.bash
 
 
-# ROS Tutorials
+# ROS Resources
+
 Start here: [ROS Computational Graph Levels](http://wiki.ros.org/ROS/Concepts)
+
+ClearPath Robotics' Getting Started Guide: [ClearPath Guide](https://clearpathrobotics.com/assets/guides/kinetic/ros/Getting%20Started%20with%20Ubuntu.html)
+
+Jason M. O'Kane's Book "A Gentle Introduction to ROS": [ROS Intro Book](https://www.cse.sc.edu/~jokane/agitr/agitr-letter.pdf)
 
 Check out the video version: [ROS Video Playlist](https://www.youtube.com/playlist?list=PLH-vcjgGSri0sipCweLukjPvJuoUpGchJ)
 
