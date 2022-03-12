@@ -58,6 +58,9 @@ Introduction to Aeronautical Engineering:
 Upenn Quadrotor Course
 [Upenn Course](https://www.youtube.com/playlist?list=PLblGgzWkqSqM7IWsgjDetdzZDS1NbkTnd)
 
+Coursera Spacecraft Dynamics and Controls Course:
+[Coursera](https://www.coursera.org/specializations/spacecraft-dynamics-control)
+
 # Electronics
 
 [Simulating Arduino Circuits at Home](https://github.com/templerobotics/main/wiki/TinkerCAD-Virtual-Circuits-(Arduino-Simulator))
