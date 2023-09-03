@@ -129,6 +129,8 @@ Coursera Spacecraft Dynamics and Controls Course:
 
 Start here: [ROS Computational Graph Levels](http://wiki.ros.org/ROS/Concepts)
 
+Robotics backend youtube channel: [Robotics Backend](https://www.youtube.com/@RoboticsBackEnd/featured)
+
 ClearPath Robotics' Getting Started Guide: [ClearPath Guide](https://clearpathrobotics.com/assets/guides/kinetic/ros/Getting%20Started%20with%20Ubuntu.html)
 
 Jason M. O'Kane's Book "A Gentle Introduction to ROS": [ROS Intro Book](https://www.cse.sc.edu/~jokane/agitr/agitr-letter.pdf)
