@@ -16,9 +16,13 @@ List of resources that I use all the time throughout my jobs and school. Robotic
 
 [tutorial](https://github.com/templerobotics/main/wiki/Networking-Tutorials)
 
-# Physics
+# Physics/Kinematics/Dynamics
 
 [Feynman's Lectures on Physics](https://www.feynmanlectures.caltech.edu)
+
+[Kane's method using Sympy](https://docs.sympy.org/latest/modules/physics/mechanics/examples/rollingdisc_example_kane.html)
+
+[Kane's Method + Other Great videos on dynamics, modeling, satellites, etc.](https://www.youtube.com/watch?v=ooS6RHBk5y4&pp=ygUNa2FuZSdzIG1ldGhvZA%3D%3D)
 
 # Control Systems, Aerospace, Flight Mechanics
 
@@ -85,7 +89,7 @@ Coursera Spacecraft Dynamics and Controls Course:
 
 [Servo Control with Raspberry Pi](http://www.instructables.com/id/Servo-Motor-Control-With-Raspberry-Pi/)
 
-# Kinematics, Dynamics, Localization, and other Robotics topics
+# Robotics topics
 
 [Mac Toussaint's Robotics course](https://github.com/MarcToussaint/robotics-course)
 
@@ -107,19 +111,19 @@ Coursera Spacecraft Dynamics and Controls Course:
 
 [Arm Robot Kinematics and Joints](http://www.coppeliarobotics.com/helpFiles/en/jointDescription.htm)
 
-# ROS Tutorials
+# On my bookshelf:
 
-## ROS Kinetic
-Follow this [ROS Installation Guide](http://wiki.ros.org/kinetic/Installation)
-Remember to perform the **desktop-full installation**
+[Aircraft Control and Simulation](https://www.amazon.com/Aircraft-Control-Simulation-Dynamics-Autonomous/dp/1118870980/ref=asc_df_1118870980/?tag=hyprod-20&linkCode=df0&hvadid=312151261589&hvpos=&hvnetw=g&hvrand=16251954896090994025&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007308&hvtargid=pla-453711518290&psc=1&tag=&ref=&adgrpid=58874700461&hvpone=&hvptwo=&hvadid=312151261589&hvpos=&hvnetw=g&hvrand=16251954896090994025&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007308&hvtargid=pla-453711518290)
 
-When you are finished installing, you will need to configure your work space. Follow: [Workspace Setup](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)
+[Dynamics and Flexible Rockets](https://www.amazon.com/Aircraft-Control-Simulation-Dynamics-Autonomous/dp/1118870980/ref=asc_df_1118870980/?tag=hyprod-20&linkCode=df0&hvadid=312151261589&hvpos=&hvnetw=g&hvrand=16251954896090994025&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007308&hvtargid=pla-453711518290&psc=1&tag=&ref=&adgrpid=58874700461&hvpone=&hvptwo=&hvadid=312151261589&hvpos=&hvnetw=g&hvrand=16251954896090994025&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007308&hvtargid=pla-453711518290)
 
-Remember to source your setup.bash files (You will need to source these files anytime you open a new terminal window and you would want to perform rosrun/roslaunch commands to start up your ROS code:
+[Analytical Mechanics of Space Systems](https://www.amazon.com/Analytical-Mechanics-Systems-Fourth-Education/dp/1624105211)
 
-    source /opt/ros/kinetic/setup.bash
-    source devel/setup.bash
+[Electrical Engineering Fundamentals](https://www.amazon.com/ELECTRICAL-ENGINEERING-FUNDAMENTAL-Vincent-Toro/dp/9332551766)
 
+[Linaer System Theory and Design](https://www.amazon.com/Linear-System-Electrical-Computer-Engineering/dp/0199959579/ref=sr_1_1?keywords=linear+system+theory+and+design&qid=1693709140&s=books&sprefix=linear+sy%2Cstripbooks%2C76&sr=1-1&ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0)
+
+[Nonlinar Systems](https://www.amazon.com/Nonlinear-Systems-3rd-Hassan-Khalil/dp/0130673897/ref=sr_1_1?crid=2WO4214F37H42&keywords=nonlinear+systems+khalil&qid=1693709159&s=books&sprefix=nonlinaer+systems+khalil%2Cstripbooks%2C69&sr=1-1)
 
 # ROS Resources
 
