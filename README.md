@@ -121,9 +121,9 @@ Coursera Spacecraft Dynamics and Controls Course:
 
 [Electrical Engineering Fundamentals](https://www.amazon.com/ELECTRICAL-ENGINEERING-FUNDAMENTAL-Vincent-Toro/dp/9332551766)
 
-[Linaer System Theory and Design](https://www.amazon.com/Linear-System-Electrical-Computer-Engineering/dp/0199959579/ref=sr_1_1?keywords=linear+system+theory+and+design&qid=1693709140&s=books&sprefix=linear+sy%2Cstripbooks%2C76&sr=1-1&ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0)
+[Linear System Theory and Design](https://www.amazon.com/Linear-System-Electrical-Computer-Engineering/dp/0199959579/ref=sr_1_1?keywords=linear+system+theory+and+design&qid=1693709140&s=books&sprefix=linear+sy%2Cstripbooks%2C76&sr=1-1&ufe=app_do%3Aamzn1.fos.f5122f16-c3e8-4386-bf32-63e904010ad0)
 
-[Nonlinar Systems](https://www.amazon.com/Nonlinear-Systems-3rd-Hassan-Khalil/dp/0130673897/ref=sr_1_1?crid=2WO4214F37H42&keywords=nonlinear+systems+khalil&qid=1693709159&s=books&sprefix=nonlinaer+systems+khalil%2Cstripbooks%2C69&sr=1-1)
+[Nonlinear Systems](https://www.amazon.com/Nonlinear-Systems-3rd-Hassan-Khalil/dp/0130673897/ref=sr_1_1?crid=2WO4214F37H42&keywords=nonlinear+systems+khalil&qid=1693709159&s=books&sprefix=nonlinaer+systems+khalil%2Cstripbooks%2C69&sr=1-1)
 
 # ROS Resources
 
