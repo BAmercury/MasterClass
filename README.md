@@ -91,6 +91,8 @@ Coursera Spacecraft Dynamics and Controls Course:
 
 # Robotics topics
 
+[How to build everything really fast](https://www.instructables.com/How-to-Build-your-Everything-Really-Really-Fast/)
+
 [Mac Toussaint's Robotics course](https://github.com/MarcToussaint/robotics-course)
 
 [Robot Localization](https://www.youtube.com/watch?v=31xZhj2uPr4)
