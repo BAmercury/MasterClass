@@ -12,6 +12,14 @@ u0 = 0;
 
 % Test Finite Diff
 
-[A, B] = finite_diff(@simulink_wrapper, x0, u0, 1e-4, 1e-4)
+[A, B] = finite_diff(@simulink_wrapper, x0, u0, 1e-4, 1e-4);
 
 
+% Setup Cost Weights
+
+% Q-matrix (n, n)
+Q = eye(4);
+% R-matrix (m, m)
+R = 0.1;
+% Terminal Cost
+Qn = 100*eye(4);
