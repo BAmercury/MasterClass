@@ -85,16 +85,21 @@ Gux = zeros(1, Nx);
 
 iter = 0;
 
-max_iter = 600;
+max_iter = 500;
 
 %control_fig = figure(2);
 %grid on;
 %title('Control Trajectory')
 %hold on;
 %  max(abs(d(:))) > 1e-3
-while max(abs(d(:))) > 1e-3 || iter <= max_iter
+% exit when our feedforward goes to zero
+while max(abs(d(:))) > 1e-3
     iter = iter + 1;
     disp("Iteration: " + iter)
+    
+    if iter >= max_iter
+        break;
+    end
     
     [dJ, p, P, d, K] = backward_pass(p, P, d, K, x_traj, x_goal, u_traj, Q, R, Nt, Qn, h, @pole_cart_dynamics); 
     %disp("dJ: " + dJ)
