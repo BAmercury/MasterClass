@@ -6,7 +6,7 @@ K = [ -70.7107  -37.8345  105.5298   20.9238];
 x0 = [0;0;0;0];
 
 t = 0:0.01:5;
-u_feedforward = timeseries(zeros(length(t), 1), t);
+u_feedforward = 1;
 u0 = 0;
 
 
