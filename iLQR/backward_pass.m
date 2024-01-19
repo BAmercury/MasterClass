@@ -31,13 +31,17 @@ for i = (Nt-1):-1:1
      0 0 1 0];
     D = [0;
      0];
-    sys_ss = ss(A, B, C, D);
     % discretize
-    sys_d = c2d(sys_ss, h, 'zoh');
+    sys_d = c2d(ss(A, B, C, D), h, 'zoh');
     A = sys_d.A;
+    %Ad = eye(4,4) + A*h;
     B = sys_d.B;
+    %Bd = B*h;
     gx = q + A' * p(:, i+1);
     gu = r + B' * p(:, i+1); 
+    
+    %A = Ad;
+    %B = Bd;
     
     % iLQR (Gauss-Newton)
     Gxx = Q + A'*(P(:, :, i+1)*A); % Nx x Nx

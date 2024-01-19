@@ -1,10 +1,11 @@
 % Run ilQR
-
+clc; clear; close all;
 % Variables
 Nx = 4; % number of states
 Nu = 1; % number of controls
 Tfinal = 5.0; % terminal time
 h = 0.05; % time step
+%h = 1/100;
 Nt = int16(Tfinal/h)+1; % number of time steps
 t = 0:h:Tfinal; 
 
@@ -12,18 +13,25 @@ t = 0:h:Tfinal;
 x0 = [0; 0; 0; 0];
 x_goal = [0, 0, pi, 0]'; 
 x_traj = kron(ones(1, Nt), x0);
-%u_traj = 0.0001*ones(Nt-1, 1);
-u_traj = zeros(Nt-1, 1);
+u_traj = 0.1*ones(Nt-1, 1);
+%u_traj = zeros(Nt-1, 1);
 %u_traj(1) = 0.0001;
 
 % Setup Cost Weights
 
 % Q-matrix (n, n)
-Q = eye(4);
+Q =  [1     0     0     0;...
+      0     0     0     0;...
+      0     0     1     0;...
+      0     0     0     0];
+
 % R-matrix (m, m)
 R = 0.1;
 % Terminal Cost
-Qn = 100*eye(Nx);
+Qn = [100     0     0     0;...
+        0   100     0     0;...
+        0     0   100     0;...
+        0     0     0   100];
 
 % Initial rollout
 for k = 1:(Nt-1)
@@ -34,6 +42,29 @@ end
 J = update_cost(x_traj, x_goal, u_traj, Q, R, Qn, Nt); 
 
 disp("Initial Rollout cost: " + J)
+state_fig = figure(1); 
+subplot(2,1,1)
+title('Cart Trajectories')
+yyaxis left
+plot(t, x_traj(1,:))
+xlabel('Time (sec)')
+ylabel('meters')
+yyaxis right
+plot(t, x_traj(2, :))
+ylabel('m/s')
+legend('Cart Position (m)', 'Cart velocity (m/s)')
+grid on
+
+subplot(2,1,2)
+title('Arm Trajectory')
+yyaxis left
+plot(t, x_traj(3, :))
+ylabel('rad')
+yyaxis right
+plot(t, x_traj(4, :))
+ylabel('rad/s')
+legend('Pendulum Angle', 'Pendulum Rate')
+grid on;
 %% Full Algorithm
 
 p = ones(Nx, Nt); 
@@ -54,10 +85,14 @@ Gux = zeros(1, Nx);
 
 iter = 0;
 
-figure;
-%hold on;
+max_iter = 600;
 
-while max(abs(d(:))) > 1e-3
+%control_fig = figure(2);
+%grid on;
+%title('Control Trajectory')
+%hold on;
+%  max(abs(d(:))) > 1e-3
+while max(abs(d(:))) > 1e-3 || iter <= max_iter
     iter = iter + 1;
     disp("Iteration: " + iter)
     
@@ -77,7 +112,7 @@ while max(abs(d(:))) > 1e-3
     
     %disp("Forward rollout cost Jn: " + Jn)
     
-    while Jn > (J - 1e-2*alpha*dJ)
+    while isnan(Jn) || Jn > (J - 1e-2*alpha*dJ)
         alpha = 0.5*alpha;
         for k = 1:(Nt-1)
             un(k) = u_traj(k) - alpha*d(k) - dot( K(:,:,k), xn(:,k)-x_traj(:,k) ); 
@@ -94,7 +129,60 @@ while max(abs(d(:))) > 1e-3
     disp("Updated cost J: " + J)
     x_traj = xn;
     u_traj = un;
-    plot(t(1:Nt-1), u_traj)
-    pause(0.05)
+%     state_fig; 
+%     subplot(2,1,1)
+%     title('Cart Trajectories')
+%     yyaxis left
+%     plot(t, x_traj(1,:))
+%     xlabel('Time (sec)')
+%     ylabel('meters')
+%     yyaxis right
+%     plot(t, x_traj(2, :))
+%     ylabel('m/s')
+%     legend('Cart Position (m)', 'Cart velocity (m/s)')
+%     grid on
+% 
+%     subplot(2,1,2)
+%     title('Arm Trajectory')
+%     yyaxis left
+%     plot(t, x_traj(3, :))
+%     ylabel('rad')
+%     yyaxis right
+%     plot(t, x_traj(4, :))
+%     ylabel('rad/s')
+%     legend('Pendulum Angle', 'Pendulum Rate')
+%     grid on;
+    %control_fig;
+    %plot(t(1:Nt-1), u_traj)
+    %pause(h)
 end
+
+state_fig; 
+subplot(2,1,1)
+title('Cart Trajectories')
+yyaxis left
+plot(t, x_traj(1,:))
+xlabel('Time (sec)')
+ylabel('meters')
+yyaxis right
+plot(t, x_traj(2, :))
+ylabel('m/s')
+legend('Cart Position (m)', 'Cart velocity (m/s)')
+grid on
+
+subplot(2,1,2)
+title('Arm Trajectory')
+yyaxis left
+plot(t, x_traj(3, :))
+ylabel('rad')
+yyaxis right
+plot(t, x_traj(4, :))
+ylabel('rad/s')
+legend('Pendulum Angle', 'Pendulum Rate')
+grid on;
+
+control_fig = figure(2);
+title('Control Trajectory')
+grid on;
+plot(t(1:Nt-1), u_traj)
     

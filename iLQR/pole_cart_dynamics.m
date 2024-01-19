@@ -12,11 +12,15 @@ l_p = 0.3; % (m) pendulum arm length
 I_p = 0.006; % (kg-m^2) moment of inertia of pendulum
 g = 9.81; % (m/s^2) gravity 
 
+s = sin(x(3));
+c = cos(x(3)); 
 
 x_dot = zeros(4, 1); % 4 state variables
-p = I_p*(m_c+m_p)+m_c*m_p*l_p^2; %denominator for the A and B matrices
 
-x_dot(1) = x(2);
-x_dot(2) = (-(I_p+m_p*l_p^2)*b_c/p)*x(2) + ((m_p^2*g*l_p^2) / p)*x(3) + ( (I_p+m_p*l_p^2) / p)*u;
-x_dot(3) = x(4);
-x_dot(4) = (-(m_p*l_p*b_c)/p)*x(2) +  (m_p*g*l_p*(m_c+m_p)/p)*x(3) +  (m_p*l_p/p)*u;
+denom = 1 / ((m_c + m_p) - (m_p^2*l_p^2*c^2 / (I_p + m_p*l_p^2) ) );
+
+
+x_dot(1) = x(2); % cart velocity 
+x_dot(2) = ( u - b_c*x(2) + (m_p^2*l_p^2*g*s*c)/(I_p + m_p*l_p^2) + m_p*l_p*x(4)^2*s) * denom;
+x_dot(3) = x(4); % pen ang vel
+x_dot(4) = (-m_p*l_p*x_dot(2)*c - m_p*g*l_p*s) / (I_p + m_p*l_p^2); % pen ang accel
