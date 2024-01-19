@@ -1,4 +1,4 @@
-function [dJ, p, P, d, K] = backward_pass(p, P, d, K, x_traj, x_goal, u_traj, Q, R, Nt, Qn, fcn_handle)
+function [dJ, p, P, d, K] = backward_pass(p, P, d, K, x_traj, x_goal, u_traj, Q, R, Nt, Qn, h, fcn_handle)
 
 % Take some nominal or guess trajectory, linearize around it
 % Backwards we go to compute our approximate value/cost-to-go function 
@@ -27,6 +27,15 @@ for i = (Nt-1):-1:1
     
     % Linearize dynamics at that trajectory with the control
     [A, B] = finite_diff(fcn_handle, x_traj(:, i), u_traj(i), 1e-4, 1e-4);
+    C = [1 0 0 0;
+     0 0 1 0];
+    D = [0;
+     0];
+    sys_ss = ss(A, B, C, D);
+    % discretize
+    sys_d = c2d(sys_ss, h, 'zoh');
+    A = sys_d.A;
+    B = sys_d.B;
     gx = q + A' * p(:, i+1);
     gu = r + B' * p(:, i+1); 
     
@@ -59,8 +68,8 @@ for i = (Nt-1):-1:1
         
      
     
-    d(i) = gu/Guu;
-    K(:,:,i) = Gux/Guu;
+    d(i) = inv(Guu)*gu;
+    K(:,:,i) = inv(Guu)*Gux;
     
     p(:,i) = gx - K(:,:,i)'*gu + K(:,:,i)' * Guu * d(i) - Gxu*d(i);
     P(:,:,i) = Gxx + K(:,:,i)'*Guu*K(:,:,i) - Gxu*K(:,:,i) - K(:,:,i)'*Gux;

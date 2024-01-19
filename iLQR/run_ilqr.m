@@ -61,7 +61,7 @@ while max(abs(d(:))) > 1e-3
     iter = iter + 1;
     disp("Iteration: " + iter)
     
-    [dJ, p, P, d, K] = backward_pass(p, P, d, K, x_traj, x_goal, u_traj, Q, R, Nt, Qn, @pole_cart_dynamics); 
+    [dJ, p, P, d, K] = backward_pass(p, P, d, K, x_traj, x_goal, u_traj, Q, R, Nt, Qn, h, @pole_cart_dynamics); 
     %disp("dJ: " + dJ)
     %disp("Feedback Gains: " + K(:,:,end))
     % Forward rollout with line search
