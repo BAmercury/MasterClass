@@ -9,6 +9,7 @@ t = 0:0.01:5;
 u_feedforward = 1;
 u0 = 0;
 
+h = 0.05;  % simulation time step 
 
 % Test Finite Diff
 

@@ -27,15 +27,14 @@ for i = (Nt-1):-1:1
     
     % Linearize dynamics at that trajectory with the control
     [A, B] = finite_diff(fcn_handle, x_traj(:, i), u_traj(i), 1e-4, 1e-4);
-    
     gx = q + A' * p(:, i+1);
     gu = r + B' * p(:, i+1); 
     
     % iLQR (Gauss-Newton)
-    Gxx = Q + A'*P(:, :, i+1)*A; % Nx x Nx
-    Guu = R + B'*P(:, :, i+1)*B; % scalar
-    Gxu = A' * P(:, :, i+1)*B; % Nx x 1
-    Gux = B' * P(:, :, i+1)*A; % 1 x Nx
+    Gxx = Q + A'*(P(:, :, i+1)*A); % Nx x Nx
+    Guu = R + B'*(P(:, :, i+1)*B); % scalar
+    Gxu = A' * (P(:, :, i+1)*B); % Nx x 1
+    Gux = B' * (P(:, :, i+1)*A); % 1 x Nx
     
     % Regularization
     beta = 0.1;
@@ -65,7 +64,7 @@ for i = (Nt-1):-1:1
     
     p(:,i) = gx - K(:,:,i)'*gu + K(:,:,i)' * Guu * d(i) - Gxu*d(i);
     P(:,:,i) = Gxx + K(:,:,i)'*Guu*K(:,:,i) - Gxu*K(:,:,i) - K(:,:,i)'*Gux;
-    
+               
     dJ = dJ + gu'*d(i);
 end
     

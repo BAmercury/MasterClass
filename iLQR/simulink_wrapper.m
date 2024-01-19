@@ -13,4 +13,4 @@ results = sim(simIn);
 
 x_dot = results.simout_xdot;
 % Only need to grab from one timestamp
-x_dot = x_dot.Data(1, :)';
+x_dot = x_dot.Data(end, :)';
