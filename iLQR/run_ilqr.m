@@ -19,7 +19,7 @@ u_traj = 0.1*ones(Nt-1, 1);
 
 % Setup Cost Weights
 
-% Q-matrix (n, n)
+% Q-matrix (n, n) C'C
 Q =  [1     0     0     0;...
       0     0     0     0;...
       0     0     1     0;...
@@ -97,9 +97,9 @@ while max(abs(d(:))) > 1e-3
     iter = iter + 1;
     disp("Iteration: " + iter)
     
-    if iter >= max_iter
-        break;
-    end
+%     if iter >= max_iter
+%         break;
+%     end
     
     [dJ, p, P, d, K] = backward_pass(p, P, d, K, x_traj, x_goal, u_traj, Q, R, Nt, Qn, h, @pole_cart_dynamics); 
     %disp("dJ: " + dJ)
