@@ -24,6 +24,8 @@ List of resources that I use all the time throughout my jobs and school. Robotic
 
 [Kane's Method + Other Great videos on dynamics, modeling, satellites, etc.](https://www.youtube.com/watch?v=ooS6RHBk5y4&pp=ygUNa2FuZSdzIG1ldGhvZA%3D%3D)
 
+[Multi-body dynamics](https://moorepants.github.io/learn-multibody-dynamics/index.html)
+
 # Control Systems, Aerospace, Flight Mechanics
 
 My youtube playlist:
