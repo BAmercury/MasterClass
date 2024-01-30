@@ -67,6 +67,9 @@ Upenn Quadrotor Course
 Coursera Spacecraft Dynamics and Controls Course:
 [Coursera](https://www.coursera.org/specializations/spacecraft-dynamics-control)
 
+Reinforcement Learning:
+[Book](https://faculty.washington.edu/sbrunton/databookRL.pdf)
+
 # Electronics
 
 [Simulating Arduino Circuits at Home](https://github.com/templerobotics/main/wiki/TinkerCAD-Virtual-Circuits-(Arduino-Simulator))
