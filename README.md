@@ -70,6 +70,8 @@ Coursera Spacecraft Dynamics and Controls Course:
 Reinforcement Learning:
 [Book](https://faculty.washington.edu/sbrunton/databookRL.pdf)
 
+[Optimal Controls Wiki](https://fbswiki.org/wiki/index.php/Supplement:_Optimization-Based_Control)
+
 # Electronics
 
 [Simulating Arduino Circuits at Home](https://github.com/templerobotics/main/wiki/TinkerCAD-Virtual-Circuits-(Arduino-Simulator))
