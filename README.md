@@ -26,6 +26,8 @@ List of resources that I use all the time throughout my jobs and school. Robotic
 
 [Multi-body dynamics](https://moorepants.github.io/learn-multibody-dynamics/index.html)
 
+[Python Kane's Method Multibody dynamic examples](https://onlinelibrary.wiley.com/doi/epdf/10.1002/cae.22438?af=R)
+
 # Control Systems, Aerospace, Flight Mechanics
 
 My youtube playlist:
@@ -52,9 +54,6 @@ This website also has hardware examples on Arduino:
 Here are two videos that take you through control of a line following robot:
 [Line Following](https://www.youtube.com/watch?v=Fjdmg8TjV74)
 
-Optimal Control/Optimization Methods:
-[Youtube Playlist](https://www.youtube.com/playlist?list=PLMLojHoA_QPmRiPotD_TnfdUkglTexuqm)
-
 Flight Mechanics:
 [Youtube Playlist](https://www.youtube.com/playlist?list=PLWC_AgPbmiSQCnuHnS9eh2rSfCZPg31rk)
 
@@ -66,6 +65,31 @@ Upenn Quadrotor Course
 
 Coursera Spacecraft Dynamics and Controls Course:
 [Coursera](https://www.coursera.org/specializations/spacecraft-dynamics-control)
+
+[NASA Satellite Simulation Tool + Documentation](https://github.com/ericstoneking/42)
+
+# Optimization, Optimal Controls, Guidance, Machine Learning
+
+Shooting Methods, ilQR, lander examples:
+
+[Intro to Shooting Methods](https://gereshes.com/2019/01/14/an-introduction-to-shooting-methods/)
+
+[Intro Gradient Descent](https://gereshes.com/2018/10/01/an-introduction-to-gradient-descent/)
+
+[Lunar Lander Example](https://gereshes.com/2019/10/21/optimal-control-of-a-lunar-lander/)
+
+[Newton's Method](https://www.youtube.com/watch?v=W7S94pq5Xuo)
+
+[DDP/iLQR Lecture videos](https://www.youtube.com/watch?v=hUf5YhSptLs&pp=ygUYb3B0aW1hbCBjb250cm9sIGlscXIgZGRw)
+
+[ilQR](https://studywolf.wordpress.com/2016/02/03/the-iterative-linear-quadratic-regulator-method)
+
+Optimal Control/Optimization Methods:
+[Youtube Playlist](https://www.youtube.com/playlist?list=PLMLojHoA_QPmRiPotD_TnfdUkglTexuqm)
+
+[Dynamic Differential Programming](https://andylee024.github.io/blog/2018/10/10/ddp/#fn1)
+
+[Optimal Controls book](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118122631)
 
 Reinforcement Learning:
 [Book](https://faculty.washington.edu/sbrunton/databookRL.pdf)
