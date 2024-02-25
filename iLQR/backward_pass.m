@@ -34,16 +34,13 @@ for i = (Nt-1):-1:1
     % discretize
     sys_d = c2d(ss(A, B, C, D), h, 'zoh');
     A = sys_d.A;
-    %Ad = eye(4,4) + A*h;
     B = sys_d.B;
-    %Bd = B*h;
-    gx = q + A' * p(:, i+1);
-    gu = r + B' * p(:, i+1); 
     
-    %A = Ad;
-    %B = Bd;
-    
-    % iLQR (Gauss-Newton)
+    % First Derivatives 
+    gx = q + A' * p(:, i+1); % partial derivative of the change in our value function wrt x
+    gu = r + B' * p(:, i+1);  % partial derivative of the change in our value function wrt u
+        
+    % Second Derivatives 
     Gxx = Q + A'*(P(:, :, i+1)*A); % Nx x Nx
     Guu = R + B'*(P(:, :, i+1)*B); % scalar
     Gxu = A' * (P(:, :, i+1)*B); % Nx x 1
