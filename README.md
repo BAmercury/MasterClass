@@ -68,6 +68,10 @@ Coursera Spacecraft Dynamics and Controls Course:
 
 [NASA Satellite Simulation Tool + Documentation](https://github.com/ericstoneking/42)
 
+[Orbital Mechanics Resource](https://orbital-mechanics.space/intro.html)
+
+[Astrodynamics in Python](https://docs.poliastro.space/en/stable/index.html)
+
 # Optimization, Optimal Controls, Guidance, Machine Learning
 
 Shooting Methods, ilQR, lander examples:
