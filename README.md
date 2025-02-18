@@ -1,6 +1,10 @@
 # MasterClass
 List of resources that I use all the time throughout my jobs and school. Robotics, Controls, Dynamics, EE, CS
 
+# Spaceflight
+
+[learn the basics of Spaceflight - a full tutorial](https://science.nasa.gov/learn/basics-of-space-flight/)
+
 # Embedded Systems and Programming:
 
 [Introduction to Computer Science](https://www.edx.org/course/cs50s-introduction-to-computer-science)
