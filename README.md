@@ -158,7 +158,7 @@ Reinforcement Learning:
 
 [Aircraft Control and Simulation](https://www.amazon.com/Aircraft-Control-Simulation-Dynamics-Autonomous/dp/1118870980/ref=asc_df_1118870980/?tag=hyprod-20&linkCode=df0&hvadid=312151261589&hvpos=&hvnetw=g&hvrand=16251954896090994025&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007308&hvtargid=pla-453711518290&psc=1&tag=&ref=&adgrpid=58874700461&hvpone=&hvptwo=&hvadid=312151261589&hvpos=&hvnetw=g&hvrand=16251954896090994025&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007308&hvtargid=pla-453711518290)
 
-[Dynamics and Flexible Rockets](https://www.amazon.com/Aircraft-Control-Simulation-Dynamics-Autonomous/dp/1118870980/ref=asc_df_1118870980/?tag=hyprod-20&linkCode=df0&hvadid=312151261589&hvpos=&hvnetw=g&hvrand=16251954896090994025&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007308&hvtargid=pla-453711518290&psc=1&tag=&ref=&adgrpid=58874700461&hvpone=&hvptwo=&hvadid=312151261589&hvpos=&hvnetw=g&hvrand=16251954896090994025&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9007308&hvtargid=pla-453711518290)
+[Dynamics and Simulation of Flexible Rockets](https://www.amazon.com/Dynamics-Simulation-Flexible-Rockets-Timothy/dp/0128199946)
 
 [Analytical Mechanics of Space Systems](https://www.amazon.com/Analytical-Mechanics-Systems-Fourth-Education/dp/1624105211)
 
