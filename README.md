@@ -76,6 +76,8 @@ Coursera Spacecraft Dynamics and Controls Course:
 
 [Astrodynamics in Python](https://docs.poliastro.space/en/stable/index.html)
 
+[State Space Model](https://cookierobotics.com/018/)
+
 # Optimization, Optimal Controls, Guidance, Machine Learning
 
 Shooting Methods, ilQR, lander examples:
